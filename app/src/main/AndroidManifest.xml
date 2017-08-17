@@ -26,10 +26,15 @@
         <activity
             android:name=".mainreading"
             android:configChanges="orientation|keyboardHidden|screenSize"
-            android:theme="@style/AppTheme"/>
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".hindigita"
             android:theme="@style/AppTheme" />
+        <activity
+            android:name=".hanumanchalisahindi"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_hanumanchalisahindi"
+            android:theme="@style/FullscreenTheme"></activity>
     </application>
 
 </manifest>
