@@ -86,7 +86,7 @@ public class hanumanchalisahindi extends Activity implements NavigationView.OnNa
                     | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION);
         }
     };
-    private View mControlsView;
+  //  private View mControlsView;
     private final Runnable mShowPart2Runnable = new Runnable() {
         @Override
         public void run() {
@@ -95,7 +95,7 @@ public class hanumanchalisahindi extends Activity implements NavigationView.OnNa
             if (actionBar != null) {
                 actionBar.show();
             }
-            mControlsView.setVisibility(View.VISIBLE);
+      //      mControlsView.setVisibility(View.VISIBLE);
         }
     };
     private boolean mVisible;
@@ -127,7 +127,7 @@ public class hanumanchalisahindi extends Activity implements NavigationView.OnNa
         setContentView(R.layout.activity_hanumanchalisahindi);
 
         mVisible = true;
-        mControlsView = findViewById(R.id.fullscreen_content_controls);
+       // mControlsView = findViewById(R.id.fullscreen_content_controls);
         mContentView = findViewById(R.id.fullscreen_content);
 
 
@@ -142,7 +142,7 @@ public class hanumanchalisahindi extends Activity implements NavigationView.OnNa
         // Upon interacting with UI controls, delay any scheduled hide()
         // operations to prevent the jarring behavior of controls going away
         // while interacting with the UI.
-        findViewById(R.id.dummy_button).setOnTouchListener(mDelayHideTouchListener);
+       // findViewById(R.id.dummy_button).setOnTouchListener(mDelayHideTouchListener);
         Button btnPrevious = (Button) findViewById(R.id.btn_previous2);
         btnPrevious.setOnClickListener(this);
         Button btnNext = (Button) findViewById(R.id.btn_next2);
@@ -350,7 +350,7 @@ public class hanumanchalisahindi extends Activity implements NavigationView.OnNa
         if (actionBar != null) {
             actionBar.hide();
         }
-        mControlsView.setVisibility(View.GONE);
+     //   mControlsView.setVisibility(View.GONE);
         mVisible = false;
 
         // Schedule a runnable to remove the status and navigation bar after a delay
