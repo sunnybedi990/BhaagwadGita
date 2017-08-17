@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layouthindi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context="com.dalbeer.sunnybedi.bhaagwadgita.hindigita"
+        tools:layout_editor_absoluteX="8dp"
+        >
+
+        <Button
+            android:id="@+id/btn_next1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="8dp"
+            android:layout_marginRight="0dp"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <EditText
+            android:id="@+id/edtxt_pagenum1"
+            android:layout_width="78dp"
+            android:layout_height="19dp"
+            android:background="@android:color/background_light"
+            android:ems="10"
+            android:inputType="number"
+            android:textColor="@android:color/background_dark"
+            tools:layout_editor_absoluteY="25dp"
+            app:layout_constraintLeft_toRightOf="@+id/btn_previous1"
+            android:layout_marginLeft="16dp" />
+
+        <Button
+            android:id="@+id/btn_previous1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Previous"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="3dp" />
+
+        <ImageView
+            android:id="@+id/imgvw_main1"
+            android:layout_width="381dp"
+            android:layout_height="464dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/btn_previous1"
+            app:srcCompat="@mipmap/ic_launcher"
+            tools:layout_editor_absoluteX="3dp" />
+
+        <SeekBar
+            android:id="@+id/seekBar1"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="291dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:max="10"
+            android:progress="3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintLeft_toRightOf="@+id/btn_playpause1"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <Button
+            android:id="@+id/btn_playpause1"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="p"
+            tools:layout_editor_absoluteX="3dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btn_go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Go"
+        app:layout_constraintLeft_toRightOf="@+id/edtxt_pagenum1"
+        app:layout_constraintRight_toLeftOf="@+id/btn_next1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
+
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_viewhindi"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/black_overlay"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/activity_main_drawer" />
+
+</android.support.v4.widget.DrawerLayout>
