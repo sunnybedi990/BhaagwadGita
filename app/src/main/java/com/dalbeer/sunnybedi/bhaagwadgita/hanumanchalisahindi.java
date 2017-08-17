@@ -31,11 +31,18 @@ public class hanumanchalisahindi extends Activity implements NavigationView.OnNa
      * {@link #AUTO_HIDE_DELAY_MILLIS} milliseconds.
      */
     int image_index = 0;
-    private static final int MAX_IMAGE_COUNT = 139;
+    private static final int MAX_IMAGE_COUNT = 7;
 
     private int[] mImageIds = {
-            R.raw.hindiimage1,
-            R.raw.hindiimage2,
+            R.raw.hanuman1,
+            R.raw.hanuman2,
+            R.raw.hanuman3,
+            R.raw.hanuman4,
+            R.raw.hanuman5,
+            R.raw.hanuman6,
+            R.raw.hanuman7,
+
+
             };
     private static final boolean AUTO_HIDE = true;
 
